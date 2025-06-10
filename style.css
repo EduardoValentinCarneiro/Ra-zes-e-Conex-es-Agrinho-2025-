@@ -234,3 +234,54 @@ header .titulo {
 .navbar li a.active {
   background-color: #ddd;
 }
+
+
+/* Responsividade geral */
+@media (max-width: 800px) {
+  .timeline .event {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .timeline .event .campo,
+  .timeline .event .cidade {
+    padding: 1rem;
+  }
+  .mapa-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .quiz-btn, .interativo button {
+    width: 80%;
+    max-width: 300px;
+    margin: 0.5rem auto;
+  }
+}
+
+/* Navbar em dispositivos menores */
+@media (max-width: 700px) {
+  header.topo {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar {
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+  }
+}
+
+/* Ajuste no jogo.html para celular */
+@media (max-width: 900px) {
+  body {
+    flex-direction: column;
+  }
+  .sidebar, main {
+    width: 100%;
+    height: auto;
+  }
+  iframe {
+    width: 100%;
+    height: 450px; /* já existente, mas reforço para bom layout */
+  }
+}
