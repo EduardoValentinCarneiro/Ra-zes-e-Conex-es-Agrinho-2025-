@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jogo 2 - Raízes e Conexões</title>
+
+  <link rel="icon" href="img/favicon-16x16.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #e8f5e9;
+      color: white;
+    }
+
+    body {
+      display: flex;
+      flex-direction: row;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .sidebar {
+      width: 200px;
+      background: #6d9e67;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 1rem;
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #b7ccb3;
+      box-sizing: border-box;
+      padding: 10px;
+    }
+
+    iframe {
+      border-radius: 10px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 1000px;
+      height: 589px; /* Reduzido de 700px para 550px */
+      background: black;
+    }
+
+    @media (max-width: 900px) {
+      body {
+        flex-direction: column;
+        overflow-y: auto;
+      }
+
+      .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+      }
+
+      main {
+        padding: 20px;
+      }
+
+      iframe {
+        width: 100%;
+        height: 450px; /* Altura menor em telas pequenas */
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>🍎 Cestas do Campo</h2>
+    <p>
+      Este jogo educativo simula a coleta de frutas saudáveis no campo.  
+      A cada rodada, o jogador assume o controle de uma nova cesta e deve evitar frutas podres!
+    </p>
+    <p>
+      Desenvolvido com base na relação entre campo e cidade, reforça a importância da produção rural na nossa alimentação.
+    </p>
+  </div>
+
+  <main>
+    <iframe 
+      src="https://eduardovalentincarneiro.github.io/Jogo-Das-Cestas-do-site-Ra-zes-e-Conexoes/" 
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
+  </main>
+
+  <div class="sidebar">
+    <h2>🎯 Objetivo</h2>
+    <p>
+      Colete o máximo de frutas boas enquanto evita as estragadas.  
+      Ao final das 4 fases, conquiste estrelas de acordo com seu desempenho!
+      jogo feito no p5.js
+    </p>
+    <p>
+      🔗 <a href="https://github.com/EduardoValentinCarneiro/Jogo-Das-Cestas-do-site-Ra-zes-e-Conexoes" style="color: white; text-decoration: underline;" target="_blank">
+         Clique aqui para conhecer o projeto!
+      </a>
+    </p>
+  </div>
+</body>
+</html>
